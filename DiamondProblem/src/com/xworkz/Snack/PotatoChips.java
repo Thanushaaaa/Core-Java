@@ -1,12 +1,11 @@
 package com.xworkz.Snack;
 
-public interface PotatoChips extends Chips{
+public interface PotatoChips extends Chips {
 	@Override
 	void crispy();
-	default void fry()
-	{
+
+	default void fry() {
 		System.out.println("fry chips");
 	}
-	
 
 }

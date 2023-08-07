@@ -1,10 +1,10 @@
 package com.xworkz.Snack;
 
-public interface BananaChips extends Chips{
+public interface BananaChips extends Chips {
 	@Override
 	void crispy();
-	default void sell()
-	{
+
+	default void sell() {
 		System.out.println("Sell chips");
 	}
 

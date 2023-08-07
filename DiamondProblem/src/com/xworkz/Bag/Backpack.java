@@ -1,10 +1,10 @@
-package com.xworkz.Bags;
+package com.xworkz.Bag;
 
 public interface Backpack extends TravelBag {
 	@Override
 	void carry();
-	default void store()
-	{
+
+	default void store() {
 		System.out.println("store items");
 	}
 

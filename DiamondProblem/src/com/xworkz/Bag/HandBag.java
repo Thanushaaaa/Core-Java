@@ -1,11 +1,11 @@
-package com.xworkz.Bags;
+package com.xworkz.Bag;
 
-public class HandBag implements Backpack,Clutch{
+public class HandBag implements Backpack, Clutch {
 
 	@Override
 	public void carry() {
 		System.out.println("Bags are useful to carry");
-		
+
 	}
 
 }

@@ -1,9 +1,9 @@
-package com.xworkz.Tools;
+package com.xworkz.Tool;
 
 public interface Hammer {
 	void work();
-	default void help()
-	{
+
+	default void help() {
 		System.out.println("helps in doing work");
 	}
 
