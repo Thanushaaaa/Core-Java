@@ -10,6 +10,10 @@ public class PoliticianRunner {
 		politicianRepository.save("NTR");
 		politicianRepository.save("Rajendra");
 		politicianRepository.display();
+		String name=politicianRepository.findStartswith("N");
+		System.out.println(name);
+		
+		
 
 	}
 

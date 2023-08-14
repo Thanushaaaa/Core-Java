@@ -7,5 +7,10 @@ public interface PoliticianRepository {
 	{
 		
 	}
+	default String findStartswith(String name)
+	{
+		return name;
+		
+	}
 
 }
