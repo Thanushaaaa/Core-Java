@@ -7,4 +7,12 @@ public interface MetroStaffRepository {
 
 	void save(MetroStaffDTO metroStaffDTO);
 
+	MetroStaffDTO findByName(String name);
+
+	MetroStaffDTO findBySalary(int salary);
+
+	MetroStaffDTO findByLocation(String location);
+
+	MetroStaffDTO[] readAll();
+
 }

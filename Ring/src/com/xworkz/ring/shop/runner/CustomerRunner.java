@@ -6,7 +6,7 @@ import com.xworkz.ring.shop.dto.CustomerDTO;
 public class CustomerRunner {
 
 	public static void main(String[] args) {
-		CustomerDTO customerDTO1 = new CustomerDTO("Parshi", 20, 5.0, 60.5, 10000);
+		CustomerDTO customerDTO1 = new CustomerDTO("Rana", 20, 5.0, 60.5, 10000);
 		System.out.println(customerDTO1);
 
 		CustomerDTO customerDTO2 = new CustomerDTO("Arya", 29, 6.0, 55, 12000);
@@ -27,6 +27,22 @@ public class CustomerRunner {
 		customerRepository.save(customerDTO3);
 		customerRepository.save(customerDTO4);
 		customerRepository.save(customerDTO5);
+		CustomerDTO customerDTO6 = customerRepository.findByName("Arya");
+		System.out.println(customerDTO6);
+
+		CustomerDTO customerDTO7 = customerRepository.findByAge(28);
+		System.out.println(customerDTO7);
+
+		CustomerDTO customerDTO8 = customerRepository.findByBill(11000);
+		System.out.println(customerDTO8);
+
+		CustomerDTO[] customerDTO9 = customerRepository.readAll();
+		for (int position = 0; position < customerDTO9.length; position++) {
+			if (customerDTO9[position] != null) {
+				System.out.println(customerDTO9[position]);
+			}
+		}
+
 	}
 
 }

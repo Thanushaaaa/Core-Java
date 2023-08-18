@@ -27,6 +27,22 @@ public class PilotRunner {
 		pilotRepository.save(pilotDTO3);
 		pilotRepository.save(pilotDTO4);
 		pilotRepository.save(pilotDTO5);
+		PilotDTO pilotDTO6 = pilotRepository.findByName("Virat");
+		System.out.println(pilotDTO6);
+
+		PilotDTO pilotDTO7 = pilotRepository.findByAge(25);
+		System.out.println(pilotDTO7);
+
+		PilotDTO pilotDTO8 = pilotRepository.findByPartnerName("Neha");
+		System.out.println(pilotDTO8);
+
+		PilotDTO[] pilotDTO9 = pilotRepository.readAll();
+
+		for (int position = 0; position < pilotDTO9.length; position++) {
+			if (pilotDTO9[position] != null) {
+				System.out.println(pilotDTO9[position]);
+			}
+		}
 
 	}
 

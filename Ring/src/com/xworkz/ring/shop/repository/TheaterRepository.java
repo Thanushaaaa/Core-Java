@@ -8,4 +8,12 @@ public interface TheaterRepository {
 
 	void save(TheaterDTO theaterDTO);
 
+	TheaterDTO findByName(String name);
+
+	TheaterDTO findByOwnerName(String ownerName);
+
+	TheaterDTO findByCapacity(int capacity);
+
+	TheaterDTO[] readAll();
+
 }

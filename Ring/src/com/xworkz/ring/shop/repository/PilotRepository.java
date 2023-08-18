@@ -7,4 +7,12 @@ public interface PilotRepository {
 
 	void save(PilotDTO pilotDTO);
 
+	PilotDTO findByName(String name);
+
+	PilotDTO findByAge(int age);
+
+	PilotDTO findByPartnerName(String partnerName);
+
+	PilotDTO[] readAll();
+
 }

@@ -15,9 +15,56 @@ public class MarketRepositoryImpl implements MarketRepository {
 			position++;
 
 		} else {
-			System.out.println("Can't store,array is full");
+			System.err.println("Can't store,array is full");
 		}
 
+	}
+
+	@Override
+	public MarketDTO findByLocation(String name) {
+		for (int start = 0; start < position; start++) {
+			if (marketDTO[start].getLocation() == name) {
+				System.out.println("Invoking find by location in market repository implementation");
+				return marketDTO[start];
+			}
+			System.out.println("can't find,moving to the next index");
+		}
+		System.err.println("market not found");
+		return null;
+
+	}
+
+	@Override
+	public MarketDTO findByOwner(String name) {
+		for (int start = 0; start < position; start++) {
+			if (marketDTO[start].getOwner() == name) {
+				System.out.println("Invoking find by owner in market repository implementation");
+				return marketDTO[start];
+			}
+			System.out.println("can't find,moving to the next index");
+		}
+		System.err.println("market not found");
+		return null;
+
+	}
+
+	@Override
+	public MarketDTO findByDiscount(int discount) {
+		for (int start = 0; start < position; start++) {
+			if (marketDTO[start].getDiscount() == discount) {
+				System.out.println("Invoking find by discount in market repository implementation");
+				return marketDTO[start];
+			}
+			System.out.println("can't find,moving to the next index");
+		}
+		System.err.println("market not found");
+		return null;
+	}
+
+	@Override
+	public MarketDTO[] readAll() {
+
+		return marketDTO;
 	}
 
 }

@@ -29,6 +29,22 @@ public class MarketRunner {
 		marketRepository.save(marketDTO4);
 		marketRepository.save(marketDTO5);
 
+		MarketDTO marketDTO6 = marketRepository.findByLocation("BTM");
+		System.out.println(marketDTO6);
+
+		MarketDTO marketDTO7 = marketRepository.findByOwner("Rakesh");
+		System.out.println(marketDTO7);
+
+		MarketDTO marketDTO8 = marketRepository.findByDiscount(14);
+		System.out.println(marketDTO8);
+
+		MarketDTO[] marketDTO9 = marketRepository.readAll();
+		for (int position = 0; position < marketDTO9.length; position++) {
+			if (marketDTO9[position] != null) {
+				System.out.println(marketDTO9[position]);
+			}
+		}
+
 	}
 
 }

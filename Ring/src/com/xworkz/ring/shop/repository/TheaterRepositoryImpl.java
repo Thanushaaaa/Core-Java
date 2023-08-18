@@ -15,9 +15,54 @@ public class TheaterRepositoryImpl implements TheaterRepository {
 			start++;
 
 		} else {
-			System.out.println("Can't store values,array is full");
+			System.err.println("Can't store values,array is full");
 		}
 
+	}
+
+	@Override
+	public TheaterDTO findByName(String name) {
+		for (int index = 0; index < start; index++) {
+			if (theaterDTO1[index].getName() == name) {
+
+				System.out.println("Invoking find by name in theater repository implementation");
+				return theaterDTO1[index];
+			}
+			System.out.println("theater not found,moving to next index");
+		}
+		System.err.println("theater not found");
+		return null;
+	}
+
+	@Override
+	public TheaterDTO findByOwnerName(String ownerName) {
+		for (int index = 0; index < start; index++) {
+			if (theaterDTO1[index].getOwnerName() == ownerName) {
+				System.out.println("Invoking find by owner name in theater repository implementation");
+				return theaterDTO1[index];
+			}
+		}
+
+		System.err.println("theater not found");
+		return null;
+	}
+
+	@Override
+	public TheaterDTO findByCapacity(int capacity) {
+		for (int index = 0; index < start; index++) {
+			if (theaterDTO1[index].getCapacity() == capacity) {
+				System.out.println("Invoking find by capacity in theater repository implementation");
+				return theaterDTO1[index];
+			}
+		}
+		System.err.println("theater not found");
+		return null;
+	}
+
+	@Override
+	public TheaterDTO[] readAll() {
+
+		return theaterDTO1;
 	}
 
 }

@@ -28,6 +28,22 @@ public class MetroStaffRunner {
 		metroStaffRepository.save(metroStaffDTO4);
 		metroStaffRepository.save(metroStaffDTO5);
 
+		MetroStaffDTO metroStaffDTO6 = metroStaffRepository.findByName("Nandu");
+		System.out.println(metroStaffDTO6);
+
+		MetroStaffDTO metroStaffDTO7 = metroStaffRepository.findByLocation("Hyd");
+		System.out.println(metroStaffDTO7);
+
+		MetroStaffDTO metroStaffDTO8 = metroStaffRepository.findBySalary(15000);
+		System.out.println(metroStaffDTO8);
+
+		MetroStaffDTO[] metroStaffDTO9 = metroStaffRepository.readAll();
+		for (int position = 0; position < metroStaffDTO9.length; position++) {
+			if (metroStaffDTO9[position] != null) {
+				System.out.println(metroStaffDTO9[position]);
+			}
+		}
+
 	}
 
 }
