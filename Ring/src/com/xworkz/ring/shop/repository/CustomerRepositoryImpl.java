@@ -22,7 +22,7 @@ public class CustomerRepositoryImpl implements CustomerRepository {
 	@Override
 	public CustomerDTO findByName(String name) {
 		for (int start = 0; start < index; start++) {
-			if (customerDTO[start].getName() == name) {
+			if (customerDTO[start].getName().equals(name)) {
 				System.out.println("Invoking find by name in customer repository implementation");
 				return customerDTO[start];
 
@@ -36,7 +36,7 @@ public class CustomerRepositoryImpl implements CustomerRepository {
 	@Override
 	public CustomerDTO findByAge(int age) {
 		for (int start = 0; start < index; start++) {
-			if (customerDTO[start].getAge() == age) {
+			if (customerDTO[start].getAge()==age) {
 				System.out.println("Invoking find by age in customer repository implementation");
 				return customerDTO[start];
 			}

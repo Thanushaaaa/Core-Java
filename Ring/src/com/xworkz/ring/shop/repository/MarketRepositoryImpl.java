@@ -23,7 +23,7 @@ public class MarketRepositoryImpl implements MarketRepository {
 	@Override
 	public MarketDTO findByLocation(String name) {
 		for (int start = 0; start < position; start++) {
-			if (marketDTO[start].getLocation() == name) {
+			if (marketDTO[start].getLocation().equals(name)){
 				System.out.println("Invoking find by location in market repository implementation");
 				return marketDTO[start];
 			}
@@ -37,7 +37,7 @@ public class MarketRepositoryImpl implements MarketRepository {
 	@Override
 	public MarketDTO findByOwner(String name) {
 		for (int start = 0; start < position; start++) {
-			if (marketDTO[start].getOwner() == name) {
+			if (marketDTO[start].getOwner().equals(name)) {
 				System.out.println("Invoking find by owner in market repository implementation");
 				return marketDTO[start];
 			}

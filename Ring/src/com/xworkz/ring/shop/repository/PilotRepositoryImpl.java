@@ -23,7 +23,7 @@ public class PilotRepositoryImpl implements PilotRepository {
 	@Override
 	public PilotDTO findByName(String name) {
 		for (int index = 0; index < start; index++) {
-			if (pilotDTO1[index].getName() == name) {
+			if (pilotDTO1[index].getName().equals(name)) {
 				System.out.println("Invoking find by name in pilot repository implementation");
 				return pilotDTO1[index];
 
@@ -53,7 +53,7 @@ public class PilotRepositoryImpl implements PilotRepository {
 	@Override
 	public PilotDTO findByPartnerName(String partnerName) {
 		for (int index = 0; index < start; index++) {
-			if (pilotDTO1[index].getPartnerName() == partnerName) {
+			if (pilotDTO1[index].getPartnerName().equals(partnerName)) {
 				System.out.println("Invoking find by partner name in pilot repository implementation");
 				return pilotDTO1[index];
 

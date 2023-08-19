@@ -22,7 +22,7 @@ public class MetroStaffRepositoryImpl implements MetroStaffRepository {
 	@Override
 	public MetroStaffDTO findByName(String name) {
 		for (int start = 0; start < index; start++) {
-			if (metroStaffDTO[start].getName() == name) {
+			if (metroStaffDTO[start].getName().equals(name)) {
 				System.out.println("Invoking find by name in metro staff repository implementation");
 				return metroStaffDTO[start];
 
@@ -52,7 +52,7 @@ public class MetroStaffRepositoryImpl implements MetroStaffRepository {
 	@Override
 	public MetroStaffDTO findByLocation(String location) {
 		for (int start = 0; start < index; start++) {
-			if (metroStaffDTO[start].getLocation() == location) {
+			if (metroStaffDTO[start].getLocation().equals(location)) {
 				System.out.println("Invoking find by location in metro staff repository implementation");
 				return metroStaffDTO[start];
 
