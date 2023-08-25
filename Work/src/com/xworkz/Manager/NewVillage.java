@@ -5,7 +5,7 @@ import com.xworkz.Token.Village;
 		@Override
 		public void exit()
 		{
-			System.out.println("Invoking exit method in New Village");
+			System.out.println("Invoking exit method in New Village ");
 		}
 
 	}
