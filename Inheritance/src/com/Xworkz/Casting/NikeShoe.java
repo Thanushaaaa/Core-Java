@@ -1,4 +1,4 @@
-package com.Xworkz.Task;
+package com.Xworkz.Casting;
 
 public class NikeShoe extends Shoe {
 	String ceo;

@@ -1,4 +1,4 @@
-package com.Xworkz.Task;
+package com.Xworkz.Casting;
 
 public class PumaShoe extends Shoe {
 	String model;

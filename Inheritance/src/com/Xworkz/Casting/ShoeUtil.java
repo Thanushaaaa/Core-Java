@@ -1,7 +1,7 @@
 package com.Xworkz.Task;
 
-public class ShoeUtil {
-	ShoeUtil(Shoe shoe)
+public static class ShoeUtil {
+	Buy(Shoe shoe)
 	{
 		System.out.println("Shoeutil");
 		if(shoe!=null)
