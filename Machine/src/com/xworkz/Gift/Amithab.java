@@ -6,7 +6,7 @@ public class Amithab {
 
 	public Amithab(PrintingMachine printingMachine) {
 		this.printingMachine = printingMachine;
-		System.out.println("Running parameterized const in Amithab");
+		System.out.println("Running parameterized constructor in Amithab");
 	}
 
 	public void work() {
