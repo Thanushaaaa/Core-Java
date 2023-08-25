@@ -78,6 +78,8 @@ public class FamilyCourtRunner {
 		
 		Court court4=new Court();
 		court4.justice();
+		
+		
 
 
 		
