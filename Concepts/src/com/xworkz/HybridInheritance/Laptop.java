@@ -1,4 +1,4 @@
-package com.xworkz.Mobile;
+package com.xworkz.HybridInheritance;
 
 public class Laptop extends Device {
 	String color;

@@ -1,9 +1,10 @@
-package com.xworkz.Mobile;
+package com.xworkz.MultiLevelInheritance;
 
 public class Bmw extends Car {
 	String owner;
 
-	public Bmw(String type, int price, String owner, String brand) {
+	public Bmw(String type, int price, String owner, String brand) {              
+		
 		super(type, price, brand);
 		this.owner = owner;
 		System.out.println("Running parameterized constructor in Bmw");

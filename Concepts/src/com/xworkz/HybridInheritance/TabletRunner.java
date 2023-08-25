@@ -1,6 +1,4 @@
-package com.xworkz.MobileRunner;
-
-import com.xworkz.Mobile.Tablet;
+package com.xworkz.HybridInheritance;
 
 public class TabletRunner {
 

@@ -1,6 +1,4 @@
-package com.xworkz.MobileRunner;
-
-import com.xworkz.Mobile.Bmw;
+package com.xworkz.MultiLevelInheritance;
 
 public class BmwRunner {
 

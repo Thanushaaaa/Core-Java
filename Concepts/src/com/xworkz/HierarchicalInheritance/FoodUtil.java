@@ -1,8 +1,4 @@
-package com.xworkz.MobileRunner;
-
-import com.xworkz.Mobile.Food;
-import com.xworkz.Mobile.Pizza;
-import com.xworkz.Mobile.Burger;
+package com.xworkz.HierarchicalInheritance;
 
 public class FoodUtil {
 	FoodUtil(Food food) {

@@ -1,6 +1,4 @@
-package com.xworkz.MobileRunner;
-
-import com.xworkz.Mobile.Laptop;
+package com.xworkz.HybridInheritance;
 
 public class LaptopRunner {
 

@@ -1,4 +1,4 @@
-package com.xworkz.Mobile;
+package com.xworkz.HybridInheritance;
 
 public class Tablet extends Laptop {
 	String use;

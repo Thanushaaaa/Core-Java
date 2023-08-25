@@ -1,6 +1,4 @@
-package com.xworkz.MobileRunner;
-
-import com.xworkz.Mobile.Nurse;
+package com.xworkz.SingleInheritance;
 
 public class NurseRunner {
 

@@ -1,6 +1,4 @@
-package com.xworkz.MobileRunner;
-
-import com.xworkz.Mobile.Stadium;
+package com.xworkz.Final;
 
 public class StadiumRunner {
 

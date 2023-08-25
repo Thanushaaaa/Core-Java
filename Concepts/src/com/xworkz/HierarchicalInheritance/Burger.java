@@ -1,4 +1,4 @@
-package com.xworkz.Mobile;
+package com.xworkz.HierarchicalInheritance;
 
 public class Burger extends Food {
 	String color;
@@ -6,7 +6,7 @@ public class Burger extends Food {
 	public Burger(String type, int price, String color) {
 		super(type, price);
 		this.color = color;
-		System.out.println("Running parameterized const in Burger");
+		System.out.println("Running parameterized constructor in Burger");
 	}
 
 	@Override

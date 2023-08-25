@@ -1,6 +1,4 @@
-package com.xworkz.MobileRunner;
-
-import com.xworkz.Mobile.Doctor;
+package com.xworkz.SingleInheritance;
 
 public class DoctorRunner {
 

@@ -1,4 +1,4 @@
-package com.xworkz.Mobile;
+package com.xworkz.HierarchicalInheritance;
 
 public class Pizza extends Food {
 	int slices;

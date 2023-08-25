@@ -1,6 +1,4 @@
-package com.xworkz.MobileRunner;
-
-import com.xworkz.Mobile.Pizza;
+package com.xworkz.HierarchicalInheritance;
 
 public class PizzaRunner {
 

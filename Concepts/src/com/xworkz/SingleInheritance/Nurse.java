@@ -1,4 +1,4 @@
-package com.xworkz.Mobile;
+package com.xworkz.SingleInheritance;
 
 public class Nurse extends Doctor {
 	int salary;

@@ -1,6 +1,4 @@
-package com.xworkz.MobileRunner;
-
-import com.xworkz.Mobile.Vehicle;
+package com.xworkz.MultiLevelInheritance;
 
 public class VehicleRunner {
 

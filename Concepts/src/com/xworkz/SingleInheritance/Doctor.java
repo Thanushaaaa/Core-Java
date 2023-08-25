@@ -1,4 +1,4 @@
-package com.xworkz.Mobile;
+package com.xworkz.SingleInheritance;
 
 public class Doctor {
 	String name;

@@ -1,6 +1,4 @@
-package com.xworkz.MobileRunner;
-
-import com.xworkz.Mobile.Door;
+package com.xworkz.Final;
 
 public class DoorRunner {
 

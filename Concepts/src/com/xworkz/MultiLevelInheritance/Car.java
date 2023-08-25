@@ -1,4 +1,4 @@
-package com.xworkz.Mobile;
+package com.xworkz.MultiLevelInheritance;
 
 public class Car extends Vehicle {
 	String brand;
