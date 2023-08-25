@@ -3,7 +3,7 @@ package com.Xworkz.Task;
 public class CivilCourt extends HighCourt {
 	CivilCourt()
 	{
-		System.out.println("no arg const in CivilCourt");
+		System.out.println("no arg constructor in CivilCourt");
 	}
 	void propertyCase()
 	{
