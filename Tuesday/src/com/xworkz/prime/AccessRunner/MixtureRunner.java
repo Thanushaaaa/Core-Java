@@ -1,9 +1,11 @@
 package com.xworkz.prime.AccessRunner;
+
 import com.xworkz.prime.Access.Mixture;
+
 public class MixtureRunner {
 
 	public static void main(String[] args) {
-		Mixture mixture=new Mixture();
+		Mixture mixture = new Mixture();
 		System.out.println(mixture);
 		mixture.setColor("yellow");
 		mixture.setPrice(200);

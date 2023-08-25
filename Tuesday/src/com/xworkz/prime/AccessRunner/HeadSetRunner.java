@@ -1,9 +1,11 @@
 package com.xworkz.prime.AccessRunner;
+
 import com.xworkz.prime.Access.HeadSet;
+
 public class HeadSetRunner {
 
 	public static void main(String[] args) {
-		HeadSet headSet=new HeadSet();
+		HeadSet headSet = new HeadSet();
 		System.out.println(headSet);
 		headSet.setBrand("Boat");
 		headSet.setColor("Black");

@@ -32,7 +32,7 @@ public class Calculator {
 	@Override
 	public String toString() {
 		
-		return("price is "+price+" color is "+color+" brand is "+brand+" length is "+length); 
+		return(" price is "+price+" color is "+color+" brand is "+brand+" length is "+length); 
 	}
 
 }
