@@ -25,7 +25,7 @@ public class Assets {
 
 	@Override
 	public String toString() {
-		return " Price is " + price + " Type is " + type + " Location is " + location;
+		return "Price is " + price + " Type is " + type + " Location is " + location;
 	}
 
 	@Override
