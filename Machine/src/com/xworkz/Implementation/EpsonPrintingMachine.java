@@ -6,7 +6,7 @@ public class EpsonPrintingMachine implements PrintingMachine {
 
 	@Override
 	public void print() {
-		System.out.println("Print in Epson Printing Machine ");
+		System.out.println("Print in Epson Printing Machine");
 
 	}
 
