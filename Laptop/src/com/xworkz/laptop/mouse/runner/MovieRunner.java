@@ -7,7 +7,7 @@ import com.xworkz.laptop.mouse.service.MovieServiceImpl;
 public class MovieRunner {
 
 	public static void main(String[] args) {
-		MovieDTO movieDTO = new MovieDTO("Oppenheimer", "Christopher Nolan", 726562653, "Cilian Murphy");
+		MovieDTO movieDTO = new MovieDTO("Oppenheimer", "Christopher", 7260, "Murphy");
 		MovieService movieService = new MovieServiceImpl();
 		boolean stored = movieService.validateAndSave(movieDTO);
 		if (stored) {
@@ -15,6 +15,11 @@ public class MovieRunner {
 		} else {
 			System.err.println("Data isn't stored");
 		}
+		MovieDTO found = movieService.findByName("Oppenheimer");
+		System.out.println(found);
+
+		MovieDTO found1 = movieService.findByNameAndDirectorName("Oppenheimer", "Christopher");
+		System.out.println(found1);
 
 	}
 

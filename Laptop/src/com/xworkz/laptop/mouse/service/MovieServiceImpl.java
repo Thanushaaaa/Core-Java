@@ -5,6 +5,7 @@ import com.xworkz.laptop.mouse.util.ValidationUtil;
 import com.xworkz.laptop.mouse.repository.*;
 
 public class MovieServiceImpl implements MovieService {
+	private MovieRepository movieRepository = new MovieRepositoryImpl();
 
 	@Override
 	public boolean validateAndSave(MovieDTO movieDTO) {
@@ -48,6 +49,33 @@ public class MovieServiceImpl implements MovieService {
 		}
 		return false;
 
+	}
+
+	@Override
+	public MovieDTO findByName(String movieName) {
+		boolean foundName = ValidationUtil.validateString(movieName);
+		if (foundName) {
+			System.out.println("Valid name entered");
+			MovieDTO foundValues1 = movieRepository.findByName(movieName);
+			return foundValues1;
+
+		}
+		System.err.println("Invalid name entered");
+		return null;
+	}
+
+	@Override
+	public MovieDTO findByNameAndDirectorName(String movieName, String directorName) {
+		boolean foundName = ValidationUtil.validateString(movieName);
+		boolean fountDirector = ValidationUtil.validateString(directorName);
+		if (foundName && fountDirector) {
+			System.out.println("Valid data entered");
+			MovieDTO foundValues2 = movieRepository.findByNameAndDirectorName(movieName, directorName);
+			return foundValues2;
+
+		}
+		System.err.println("Invalid data entered");
+		return null;
 	}
 
 }

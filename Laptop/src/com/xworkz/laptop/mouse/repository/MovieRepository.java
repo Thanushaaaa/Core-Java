@@ -8,4 +8,8 @@ public interface MovieRepository {
 
 	void save(MovieDTO movieDTO);
 
+	MovieDTO findByName(String movieName);
+
+	MovieDTO findByNameAndDirectorName(String movieName, String directorName);
+
 }

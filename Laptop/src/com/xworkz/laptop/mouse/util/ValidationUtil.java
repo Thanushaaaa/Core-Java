@@ -11,4 +11,14 @@ public class ValidationUtil {
 
 	}
 
+	public static boolean validateInt(int number) {
+		if (number > 0 && number < 10000) {
+			System.out.println("Valid number entered ");
+			return true;
+		}
+
+		System.err.println("Invalid data");
+		return false;
+	}
+
 }

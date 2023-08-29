@@ -7,4 +7,8 @@ public interface HospitalRepository {
 
 	void save(HospitalDTO hospitalDTO);
 
+	HospitalDTO findByName(String name);
+
+	HospitalDTO findByNameAndPatients(String name, int noOfPatients);
+
 }

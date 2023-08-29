@@ -13,8 +13,13 @@ public class HospitalRunner {
 		if (stored) {
 			System.out.println("saved " + stored);
 		} else {
-			System.out.println("not saved " + stored);
+			System.err.println("not saved " + stored);
 		}
+		HospitalDTO found = hospitalService.findByName("Jayadeva");
+		System.out.println(found);
+
+		HospitalDTO found1 = hospitalService.findByNameAndPatients("Jayadeva", 8909);
+		System.out.println(found1);
 
 	}
 

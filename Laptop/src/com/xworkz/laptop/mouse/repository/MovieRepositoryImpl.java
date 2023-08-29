@@ -13,9 +13,38 @@ public class MovieRepositoryImpl implements MovieRepository {
 			this.movieDTO1[start] = movieDTO;
 			this.start++;
 		} else {
-			System.out.println("Can't store,array is full");
+			System.err.println("Can't store,array is full");
 		}
 
+	}
+
+	@Override
+	public MovieDTO findByName(String movieName) {
+		for (int count = 0; count < start; count++) {
+			if (movieDTO1[count].getMovieName().equals(movieName)) {
+				System.out.println("Movie found");
+				return movieDTO1[count];
+
+			}
+			System.out.println("Moving to next index");
+		}
+		System.err.println("Movie not found");
+		return null;
+	}
+
+	@Override
+	public MovieDTO findByNameAndDirectorName(String movieName, String directorName) {
+		for (int count = 0; count < start; count++) {
+			if (movieDTO1[count].getMovieName().equals(movieName)
+					&& movieDTO1[count].getDirectorName().equals(directorName)) {
+				System.out.println("Movie found");
+				return movieDTO1[count];
+
+			}
+			System.out.println("Moving to next index");
+		}
+		System.err.println("Movie not found");
+		return null;
 	}
 
 }
