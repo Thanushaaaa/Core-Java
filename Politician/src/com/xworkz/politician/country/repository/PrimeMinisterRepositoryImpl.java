@@ -3,7 +3,7 @@ package com.xworkz.politician.country.repository;
 import com.xworkz.politician.country.dto.PrimeMinisterDTO;
 
 public class PrimeMinisterRepositoryImpl implements PrimeMinisterRepository {
-	private PrimeMinisterDTO[] primeMinisterDTO1 = new PrimeMinisterDTO[5];
+	private PrimeMinisterDTO[] primeMinisterDTO1 = new PrimeMinisterDTO[NO_OF_POLITICIANS];
 	private int start = 0;
 
 	@Override
